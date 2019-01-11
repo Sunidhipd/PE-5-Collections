@@ -1,6 +1,6 @@
 package com.stackroute.pe5test;
 
-import com.stackroute.pe5main.StringMoreThan2;
+import com.stackroute.pe5.StringMoreThan2;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;

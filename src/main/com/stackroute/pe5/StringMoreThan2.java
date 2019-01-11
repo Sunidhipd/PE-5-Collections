@@ -1,4 +1,4 @@
-package com.stackroute.pe5main;
+package com.stackroute.pe5;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,26 +7,24 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FindWordCount {
+public class StringMoreThan2 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the String: ");
+        System.out.println("Enter the String: ");
         String s = sc.nextLine();
-        Map<String, Integer> res = new HashMap<String, Integer>();
-        res = count(s);
-        Set<Map.Entry<String, Integer>> st = res.entrySet();
+        Map<String, String> res = new HashMap<String, String>();
+        res=More(s);
+        Set<Map.Entry<String, String>> st = res.entrySet();
 
-        for (Map.Entry<String, Integer> me : st) {
-            System.out.print(me.getKey() + ": ");
+        for (Map.Entry<String, String> me : st) {
+            System.out.print(me.getKey() + ":");
             System.out.println(me.getValue());
         }
     }
 
-    public static Map<String, Integer> count(String s){
-
-    Map<String, Integer> res = new HashMap<String, Integer>();
+    public static Map<String, String> More(String s){
+        Map<String, String> res = new HashMap<String, String>();
         String[] ar = s.split(" ");
-        String regex = "";
 
         for (int i = 0; i < ar.length; i++) {
             Pattern p = Pattern.compile(ar[i]);
@@ -35,8 +33,11 @@ public class FindWordCount {
             while (m.find()) {
                 count += 1;
             }
-            res.put(ar[i], count);
+            if(count>=2)
+                res.put(ar[i], "true" );
+            else
+                res.put(ar[i],"false");
         }
-       return res;
+        return res;
     }
 }

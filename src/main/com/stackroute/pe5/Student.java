@@ -1,6 +1,4 @@
-package com.stackroute.pe5main;
-
-import java.util.Comparator;
+package com.stackroute.pe5;
 
 public class Student {
 

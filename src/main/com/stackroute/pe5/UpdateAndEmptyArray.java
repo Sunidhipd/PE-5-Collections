@@ -1,6 +1,5 @@
-package com.stackroute.pe5main;
+package com.stackroute.pe5;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +18,7 @@ public class UpdateAndEmptyArray {
         }
         System.out.println("Enter the modified List: ");
 
-        List<String> m=new ArrayList<String>(n);
+        List<String> m=new ArrayList<String>(n+1);
         for(int i=0;i<n;i++) {
             s=sc.nextLine();
             m.add(s);

@@ -1,8 +1,6 @@
-package com.stackroute.pe5main;
+package com.stackroute.pe5;
 
 import java.util.*;
-
-import static java.util.Arrays.asList;
 
 public class SortStringArray {
     public static void main(String args[]) {

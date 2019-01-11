@@ -1,11 +1,8 @@
-package com.stackroute.pe5main;
+package com.stackroute.pe5;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class KeyReplacement {
     public static void main(String args[]) {

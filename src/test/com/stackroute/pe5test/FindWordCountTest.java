@@ -1,6 +1,6 @@
 package com.stackroute.pe5test;
 
-import com.stackroute.pe5main.FindWordCount;
+import com.stackroute.pe5.FindWordCount;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
