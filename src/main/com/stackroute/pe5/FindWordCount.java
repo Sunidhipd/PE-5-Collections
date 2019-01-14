@@ -7,8 +7,6 @@ Output : {"one":5 , "two":2, "three" :2} */
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,16 +14,16 @@ public class FindWordCount {
     public static Map<String, Integer> count(String s){
 
     Map<String, Integer> res = new HashMap<String, Integer>();
-        String[] ar = s.split(" ");
+        String[] wordarray = s.split(" ");
 
-        for (int i = 0; i < ar.length; i++) {
-            Pattern p = Pattern.compile(ar[i]);
+        for (int i = 0; i < wordarray.length; i++) {
+            Pattern p = Pattern.compile(wordarray[i]);
             Matcher m = p.matcher(s);
             int count = 0;
             while (m.find()) {
                 count += 1;
             }
-            res.put(ar[i], count);
+            res.put(wordarray[i], count);
         }
        return res;
     }

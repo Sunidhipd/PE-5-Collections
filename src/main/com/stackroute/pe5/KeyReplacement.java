@@ -8,16 +8,13 @@ The map {"val1": "java","val2": "c++"} should return {"val1": " ", "val2":"java"
 Example 2:
 The map {"val1": "mars","val2": "saturn"}should return {"val1": " ", "val2":"mars"} */
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class KeyReplacement {
     public static Map<Object,String> replace(Map<Object,String> map){
         Object firstKey = map.keySet().toArray()[0];
         String valueForFirstKey = map.get(firstKey);
         Object SecondKey = map.keySet().toArray()[1];
-        String valueForSecondKey = map.get(SecondKey);
             map.put(SecondKey,valueForFirstKey);
             map.put(firstKey,"");
             return map;

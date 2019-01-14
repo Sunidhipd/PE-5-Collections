@@ -1,6 +1,5 @@
-package com.stackroute.pe5test;
+package com.stackroute.pe5;
 
-import com.stackroute.pe5.SortStringArray;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
